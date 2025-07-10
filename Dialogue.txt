@@ -43,3 +43,21 @@ say: oh look a jar of jam! +1
 
 Part 5:
 you think: but how? i need the raccoon to trust that I'm not hungry for jam
+you think: i need to convince raccoon that we're friends
+choices
+a +1 choice
+a 0 choice
+another +1 choice
+
+Part 6:
+you think: hey raccoon is falling for it
+a -1 choice
+a 0 choice
+a -1 choice
+
+Part 7: 
+you think: the cracks are showing
+cycle between the following options randomly until we run out (tbd)
+
+Part 8:
+Ending
