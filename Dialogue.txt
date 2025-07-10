@@ -7,7 +7,19 @@ Part 2:
 a raccoon pops out of the trash can
 raccoon says: what are you doing here
 
+Health = 5
+Goal: try to get to 10
+
+Part 3:
 choices:
-say: nothing and walk away
-say: hey how you doing :333
-say: I'm just hungry
+say: nothing and walk away 0
+    you notice raccoon eyeing the jar of jam
+say: hey how you doing :333 -1
+    raccoon: you pervert
+    you notice raccoon eyeing the jar of jam
+say: I'm just hungry +1
+    raccoon: why are you here? there's nothing for you to eat in the trash can
+    you turn to leave
+    but you notice raccoon eyeing the jar of jam
+
+Part 4:
