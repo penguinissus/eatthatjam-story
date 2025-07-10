@@ -7,7 +7,7 @@ Part 2:
 a raccoon pops out of the trash can
 raccoon says: what are you doing here
 
-Health = 5
+starting Health = 5 (could be changed?)
 Goal: try to get to 10
 anytime you reach 10, you win cuz you get the jar of jam and the raccoon doesn't
 anytime you reach 0, the game ends with you get slayed by the raccoon and the raccoon eats jam triumphantly
@@ -37,3 +37,9 @@ lunge for the jam and run away -1
     (add multiple fight scenes to stretch it out)
     you think: oh no the raccoon also wants the jam, i must distract it
 say: oh look a jar of jam! +1
+    the raccoon looks at where you're pointing and spots the jar of jam
+    saliva start spilling from the raccoon's mouth, evidently hungry
+    you think: oh no the raccoon also wants the jam, i must distract it
+
+Part 5:
+you think: but how? i need the raccoon to trust that I'm not hungry for jam
