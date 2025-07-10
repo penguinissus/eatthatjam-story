@@ -9,6 +9,10 @@ raccoon says: what are you doing here
 
 Health = 5
 Goal: try to get to 10
+anytime you reach 10, you win cuz you get the jar of jam and the raccoon doesn't
+anytime you reach 0, the game ends with you get slayed by the raccoon and the raccoon eats jam triumphantly
+if you run out of choices and isn't at 10 or 0, you and raccoon both fight for the jam,
+the jar breaks upon hitting the ground and you both don't get anything
 
 Part 3:
 choices:
@@ -23,3 +27,13 @@ say: I'm just hungry +1
     but you notice raccoon eyeing the jar of jam
 
 Part 4:
+choices:
+slowly reach for the jar of jam 0
+    the raccoon also slowly reaches for the jar of jam
+    you say: what are you doing?
+    you think: oh no the the raccoon is also noticing, i must distract it
+lunge for the jam and run away -1
+    but turns out: the raccoon is faster, it gets a hold of the jar
+    (add multiple fight scenes to stretch it out)
+    you think: oh no the raccoon also wants the jam, i must distract it
+say: oh look a jar of jam! +1
