@@ -9,6 +9,12 @@ raccoon says: what are you doing here
 
 choices:
 say: nothing and walk away
+    raccoon starts eyeing the jar of jam
+    you notice and walk back
+    raccoon says: what are you doing here huh?
+    raccoon glances at the jar of jam
     choices:
+        say: I just want that jar of jam
+        tries to snatch the jar of jam and run
 say: hey how you doing :333
 say: I'm just hungry
