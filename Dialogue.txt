@@ -9,5 +9,6 @@ raccoon says: what are you doing here
 
 choices:
 say: nothing and walk away
+    choices:
 say: hey how you doing :333
 say: I'm just hungry
