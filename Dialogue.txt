@@ -57,7 +57,11 @@ a -1 choice
 
 Part 7: 
 you think: the cracks are showing
-cycle between the following options randomly until we run out (tbd)
+cycle between the following options randomly until we run out or reach 10 points
 
 Part 8:
-Ending
+Ending 1: you reached 10 points
+Raccoon now trusts you deeply
+then 1 sudden quick move
+you grab the jar and run away
+you sit down to enjoy the jar of jam while raccoon cries by the trash can in the far background
