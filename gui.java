@@ -8,6 +8,12 @@ import javax.imageio.ImageIO; //jswing image stuff
 public class Gui extends JFrame implements ActionListener{
     static JFrame frame1;
     static JButton nextButton;
+    static JLabel openingImage;
+
+
+    int frameSizeMultiplier = 70;
+    int FRAME_WIDTH = 16*frameSizeMultiplier;
+    int FRAME_HEIGHT = 9*frameSizeMultiplier;
 
     public Gui(){
         super("EATTHATJAM");
@@ -15,31 +21,34 @@ public class Gui extends JFrame implements ActionListener{
     }
 
     public void openFrame1(){
-        //remove this if section if only 1 frame
-        if(frame1==null){
-            frame1 = new JFrame("EATTHATJAM");
-
-            int frameSizeMultiplier = 70;
-            int FRAME_WIDTH = 16*frameSizeMultiplier;
-            int FRAME_HEIGHT = 9*frameSizeMultiplier;
-
-            nextButton = new JButton("Next event");
-
-            nextButton.addActionListener(this);
-
-            frame1.setLayout(null);
-
-            //set bounds for components
-            //(x,y,width,height)
-            nextButton.setBounds(100,100,100,100);
-
-            //add components to frame
-            frame1.add(nextButton);
-
-            //frame settings
-            frame1.setSize(FRAME_WIDTH, FRAME_HEIGHT);
-            frame1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame1 = new JFrame("EATTHATJAM");
+        try{
+            Image image1 = ImageIO.read(new File("C:/Users/Jocelyn/Documents/Software related/storyboard/images/opening scene.png"));
+            Image resizedImage1 = image1.getScaledInstance(FRAME_WIDTH, FRAME_HEIGHT, Image.SCALE_SMOOTH);
+            ImageIcon imageicon = new ImageIcon(resizedImage1);
+            openingImage = new JLabel(imageicon);
+        } catch (IOException e){
+            e.printStackTrace();
         }
+
+        nextButton = new JButton("Next event");
+
+        nextButton.addActionListener(this);
+
+        frame1.setLayout(null);
+
+        //set bounds for components
+        //(x,y,width,height)
+        nextButton.setBounds(100,100,100,100);
+        openingImage.setBounds(0,0,FRAME_WIDTH,FRAME_HEIGHT);
+
+        //add components to frame
+        frame1.add(nextButton);
+        frame1.add(openingImage);
+
+        //frame settings
+        frame1.setSize(FRAME_WIDTH, FRAME_HEIGHT);
+        frame1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         frame1.setVisible(true);
     }
