@@ -58,6 +58,12 @@ a -1 choice
 Part 7: 
 you think: the cracks are showing
 cycle between the following options randomly until we run out or reach 10 or 0 points
+Option 1:
+Option 2:
+Option 3:
+Option 4:
+Option 5:
+Option 6:
 
 Part 8:
 Ending 1: you reached 10 points

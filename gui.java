@@ -19,7 +19,7 @@ public class Gui extends JFrame implements ActionListener{
         if(frame1==null){
             frame1 = new JFrame("EATTHATJAM");
 
-            int frameSizeMultiplier = 25;
+            int frameSizeMultiplier = 70;
             int FRAME_WIDTH = 16*frameSizeMultiplier;
             int FRAME_HEIGHT = 9*frameSizeMultiplier;
 
