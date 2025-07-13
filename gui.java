@@ -9,7 +9,7 @@ public class Gui extends JFrame implements ActionListener{
     static JFrame frame1;
     static JButton nextButton;
     static JLabel openingImage;
-
+    static String openingImagePath;
 
     int frameSizeMultiplier = 70;
     int FRAME_WIDTH = 16*frameSizeMultiplier;
@@ -22,8 +22,9 @@ public class Gui extends JFrame implements ActionListener{
 
     public void openFrame1(){
         frame1 = new JFrame("EATTHATJAM");
+        openingImagePath = "C:/Users/Jocelyn/Documents/Software related/storyboard/images/opening scene.png";
         try{
-            Image image1 = ImageIO.read(new File("C:/Users/Jocelyn/Documents/Software related/storyboard/images/opening scene.png"));
+            Image image1 = ImageIO.read(new File(openingImagePath));
             Image resizedImage1 = image1.getScaledInstance(FRAME_WIDTH, FRAME_HEIGHT, Image.SCALE_SMOOTH);
             ImageIcon imageicon = new ImageIcon(resizedImage1);
             openingImage = new JLabel(imageicon);
@@ -39,8 +40,8 @@ public class Gui extends JFrame implements ActionListener{
 
         //set bounds for components
         //(x,y,width,height)
-        nextButton.setBounds(100,100,100,100);
-        openingImage.setBounds(0,0,FRAME_WIDTH,FRAME_HEIGHT);
+        nextButton.setBounds(100, 100, 100, 100);
+        openingImage.setBounds(0, 0, FRAME_WIDTH, FRAME_HEIGHT);
 
         //add components to frame
         frame1.add(nextButton);
