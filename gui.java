@@ -15,6 +15,8 @@ public class Gui extends JFrame implements ActionListener{
     int FRAME_WIDTH;
     int FRAME_HEIGHT;
 
+    int JLabel[10];
+
     public Gui(){
         super("EATTHATJAM");
         frameSizeMultiplier = 70;
