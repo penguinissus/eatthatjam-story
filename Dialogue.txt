@@ -34,13 +34,13 @@ say: I'm just hungry +1
 scene 7: show the choices
     choice 1: counter++
     choice 2: counter+=2
-    choice 3: counter+=3
+    choice 3: counter+=4
 scene 8: say nothing and walk away, show the to scene13button
-scene 9: say how are you doing
+scene 9: say how are you doing, show nextButton
 scene 10: raccon says pervert, show the to scene13button
-scene 11: say im hungry
+scene 11: say im hungry, show nextButton
 scene 12: theres nothing for you to eat in the trash can, show to scene8button
-scene 13: you notice raccoon eyeing jar of jam
+scene 13: you notice raccoon eyeing jar of jam, show nextButton
 
 
 Part 4:
