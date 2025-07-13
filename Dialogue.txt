@@ -60,10 +60,14 @@ say: oh look a jar of jam! +1
 scene 14: show choices
     choice 1: counter++;
     choice 2: counter+=4;
+    choice 3: counter+=5;
 scene 15: both
 scene 16: slowly
-scene 17: moving
-scene 18: 
+scene 17: moving, show scene21button
+scene 18: says raccoon is faster, show scene21button
+scene 19: say oh look jar of jam
+scene 20: hungry raccoon
+scene 21: think must distract raccoon
 
 Part 5:
 you think: but how? i need the raccoon to trust that I'm not hungry for jam
