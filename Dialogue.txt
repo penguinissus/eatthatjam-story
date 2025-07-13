@@ -57,6 +57,13 @@ say: oh look a jar of jam! +1
     the raccoon looks at where you're pointing and spots the jar of jam
     saliva start spilling from the raccoon's mouth, evidently hungry
     you think: oh no the raccoon also wants the jam, i must distract it
+scene 14: show choices
+    choice 1: counter++;
+    choice 2: counter+=4;
+scene 15: both
+scene 16: slowly
+scene 17: moving
+scene 18: 
 
 Part 5:
 you think: but how? i need the raccoon to trust that I'm not hungry for jam
