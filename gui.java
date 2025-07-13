@@ -12,11 +12,14 @@ public class Gui extends JFrame implements ActionListener{
     static String openingImagePath;
 
     int frameSizeMultiplier = 70;
-    int FRAME_WIDTH = 16*frameSizeMultiplier;
-    int FRAME_HEIGHT = 9*frameSizeMultiplier;
+    int FRAME_WIDTH;
+    int FRAME_HEIGHT;
 
     public Gui(){
         super("EATTHATJAM");
+        frameSizeMultiplier = 70;
+        FRAME_WIDTH = 16*frameSizeMultiplier;
+        FRAME_HEIGHT = 9*frameSizeMultiplier;
         openFrame1();
     }
 
