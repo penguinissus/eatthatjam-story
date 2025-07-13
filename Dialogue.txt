@@ -10,6 +10,8 @@ scene 4: boy's eye sparkles from seeing jam
 Part 2:
 a raccoon pops out of the trash can
 raccoon says: what are you doing here
+scene 5: raccoon appears behind? or out of? trash can
+scene 6: raccoon speech
 
 starting Health = 5 (could be changed?)
 Goal: try to get to 10
@@ -29,6 +31,17 @@ say: I'm just hungry +1
     raccoon: why are you here? there's nothing for you to eat in the trash can
     you turn to leave
     but you notice raccoon eyeing the jar of jam
+scene 7: show the choices
+    choice 1: counter++
+    choice 2: counter+=2
+    choice 3: counter+=3
+scene 8: say nothing and walk away, show the to scene13button
+scene 9: say how are you doing
+scene 10: raccon says pervert, show the to scene13button
+scene 11: say im hungry
+scene 12: theres nothing for you to eat in the trash can, show to scene8button
+scene 13: you notice raccoon eyeing jar of jam
+
 
 Part 4:
 choices:

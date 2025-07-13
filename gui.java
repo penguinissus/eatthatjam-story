@@ -8,6 +8,7 @@ import javax.imageio.ImageIO; //jswing image stuff
 public class Gui extends JFrame implements ActionListener{
     static JFrame frame1;
     static JButton nextButton;
+    static JButton scene13button, scene8button; //tbd
     static JLabel openingImage, scene2Image;
     static String openingImagePath, scene2ImagePath;
 
