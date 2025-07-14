@@ -88,6 +88,7 @@ a -1 choice: the weather is quite nice today
 a -1 choice: why are you alone? is it because your parents don't love you?
 scene 26: I think the raccoon is falling for it
 scene 27: show options
+scene 28: uh oh the raccoon doesn't trust me, I need to do better
 
 Part 7: 
 you think: uh oh the cracks are showing
