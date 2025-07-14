@@ -8,7 +8,7 @@ import javax.imageio.ImageIO; //jswing image stuff
 public class Gui extends JFrame implements ActionListener{
     static JFrame frame1;
     static JButton nextButton;
-    static JButton scene13button, scene8button, scene24button; //tbd
+    static JButton scene13button, scene8button, scene24button, scene44button; //tbd
     static JLabel openingImage, scene2Image;
     static String openingImagePath, scene2ImagePath;
 
@@ -34,22 +34,50 @@ public class Gui extends JFrame implements ActionListener{
         openingImage = importImage(FRAME_WIDTH, FRAME_HEIGHT, openingImagePath);
         scene2Image = importImage(FRAME_WIDTH, FRAME_HEIGHT, scene2ImagePath);
 
-        nextButton = new JButton("Next event");
+        nextButton = new JButton();
+        scene8button = new JButton();
+        scene13button = new JButton();
+        scene24button = new JButton();
+        scene44button = new JButton();
 
         nextButton.addActionListener(this);
+        scene8button.addActionListener(this);
+        scene13button.addActionListener(this);
+        scene24button.addActionListener(this);
+        scene44button.addActionListener(this);
 
         frame1.setLayout(null);
 
         //set bounds for components
         //(x,y,width,height)
         nextButton.setBounds(0, 0, FRAME_WIDTH, FRAME_HEIGHT);
+        scene8button.setBounds(0, 0, FRAME_WIDTH, FRAME_HEIGHT);
+        scene13button.setBounds(0, 0, FRAME_WIDTH, FRAME_HEIGHT);
+        scene24button.setBounds(0, 0, FRAME_WIDTH, FRAME_HEIGHT);
+        scene44button.setBounds(0, 0, FRAME_WIDTH, FRAME_HEIGHT);
         openingImage.setBounds(0, 0, FRAME_WIDTH, FRAME_HEIGHT);
         scene2Image.setBounds(0, 0, FRAME_WIDTH, FRAME_HEIGHT);
 
         //add components to frame
         frame1.add(nextButton);
+        frame1.add(scene8button);
+        frame1.add(scene13button);
+        frame1.add(scene24button);
+        frame1.add(scene44button);
         frame1.add(openingImage);
         frame1.add(scene2Image);
+
+        //hide buttons
+        hideButton(nextButton);
+        nextButton.setVisible(true);
+        hideButton(scene8button);
+        scene8button.setVisible(false);
+        hideButton(scene13button);
+        scene13button.setVisible(false);
+        hideButton(scene24button);
+        scene24button.setVisible(false);
+        hideButton(scene44button);
+        scene44button.setVisible(false);
 
         //frame settings
         frame1.setSize(FRAME_WIDTH, FRAME_HEIGHT);
@@ -70,6 +98,12 @@ public class Gui extends JFrame implements ActionListener{
             e.printStackTrace();
         }
         return null;
+    }
+
+    public void hideButton(JButton button){
+        button.setOpaque(false);
+        button.setContentAreaFilled(false);
+        button.setBorderPainted(false);
     }
 
     @Override
