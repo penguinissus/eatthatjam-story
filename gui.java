@@ -9,6 +9,17 @@ public class Gui extends JFrame implements ActionListener{
     static JFrame frame1;
     static JButton nextButton;
     static JButton scene13button, scene8button, scene24button, scene44button;
+    //to initialize
+    static JButton scene7a, scene7b, scene7c;
+    static JButton scene14a, scene14b, scene14c;
+    static JButton scene25a, scene25b, scene25c;
+    static JButton scene27a, scene27b, scene27c;
+    static JButton option1a, option1b, option1c;
+    static JButton option2a, option2b, option2c;
+    static JButton option3a, option3b, option3c;
+    static JButton option4a, option4b, option4c;
+    static JButton option5a, option5b, option5c;
+    static JButton option6a, option6b, option6c;
     static JLabel scene1Image, scene2Image, scene3Image, scene4Image, scene5Image, scene6Image, scene7Image, scene8Image, scene9Image, scene10Image;
     static JLabel scene11Image, scene12Image, scene13Image, scene14Image, scene15Image, scene16Image, scene17Image, scene18Image, scene19Image, scene20Image;
     static JLabel scene21Image, scene22Image, scene23Image, scene24Image, scene25Image, scene26Image, scene27Image, scene28Image, scene29Image, scene30Image;
@@ -27,6 +38,7 @@ public class Gui extends JFrame implements ActionListener{
     int BACKGROUND_HEIGHT;
 
     int sceneCounter;
+    int health;
 
     public Gui(){
         super("EATTHATJAM");
@@ -36,6 +48,7 @@ public class Gui extends JFrame implements ActionListener{
         BACKGROUND_WIDTH = FRAME_WIDTH-20;
         BACKGROUND_HEIGHT = FRAME_HEIGHT-40;
         sceneCounter = 1;
+        health = 5;
         openFrame1();
     }
 
@@ -137,12 +150,72 @@ public class Gui extends JFrame implements ActionListener{
         scene13button = new JButton();
         scene24button = new JButton();
         scene44button = new JButton();
+        scene7a = new JButton();
+        scene7b = new JButton();
+        scene7c = new JButton();
+        scene 14a = new JButton();
+        scene14b = new JButton();
+        scene14c = new JButton();
+        scene25a = new JButton();
+        scene25b = new JButton();
+        scene25c = new JButton();
+        scene27a = new JButton();
+        scene27b = new JButton();
+        scene27c = new JButton();
+        option1a = new JButton();
+        option1b = new JButton();
+        option1c = new JButton();
+        option2a = new JButton();
+        option2b = new JButton();
+        option2c = new JButton();
+        option3a = new JButton();
+        option3b = new JButton();
+        option3c = new JButton();
+        option4a = new JButton();
+        option4b = new JButton();
+        option4c = new JButton();
+        option5a = new JButton();
+        option5b = new JButton();
+        option5c = new JButton();
+        option6a = new JButton();
+        option6b = new JButton();
+        option6c = new JButton();
 
         nextButton.addActionListener(this);
         scene8button.addActionListener(this);
         scene13button.addActionListener(this);
         scene24button.addActionListener(this);
         scene44button.addActionListener(this);
+        scene7a.addActionListener(this);
+        scene7b.addActionListener(this);
+        scene7c.addActionListener(this);
+        scene14a.addActionListener(this);
+        scene14b.addActionListener(this);
+        scene14c.addActionListener(this);
+        scene25a.addActionListener(this);
+        scene25b.addActionListener(this);
+        scene25c.addActionListener(this);
+        scene27a.addActionListener(this);
+        scene27b.addActionListener(this);
+        scene27c.addActionListener(this);
+        option1a.addActionListener(this);
+        option1b.addActionListener(this);
+        option1c.addActionListener(this);
+        option2a.addActionListener(this);
+        option2b.addActionListener(this);
+        option2c.addActionListener(this);
+        option3a.addActionListener(this);
+        option3b.addActionListener(this);
+        option3c.addActionListener(this);
+        option4a.addActionListener(this);
+        option4b.addActionListener(this);
+        option4c.addActionListener(this);
+        option5a.addActionListener(this);
+        option5b.addActionListener(this);
+        option5c.addActionListener(this);
+        option6a.addActionListener(this);
+        option6b.addActionListener(this);
+        option6c.addActionListener(this);
 
         frame1.setLayout(null);
 
@@ -198,6 +271,37 @@ public class Gui extends JFrame implements ActionListener{
         scene43Image.setBounds(0, 0, BACKGROUND_WIDTH, BACKGROUND_HEIGHT);
         scene44Image.setBounds(0, 0, BACKGROUND_WIDTH, BACKGROUND_HEIGHT);
 
+        scene7a.setBounds(0,0,100,100);
+        scene7b.setBounds(100,100,100,100);
+        scene7c.setBounds(200,200,100,100);
+        scene14a.setBounds(0,0,100,100);
+        scene14b.setBounds(100,100,100,100);
+        scene14c.setBounds(200,200,100,100);
+        scene25a.setBounds(0,0,100,100);
+        scene25b.setBounds(100,100,100,100);
+        scene25c.setBounds(200,200,100,100);
+        scene27a.setBounds(0,0,100,100);
+        scene27b.setBounds(100,100,100,100);
+        scene27c.setBounds(200,200,100,100);
+        option1a.setBounds(0,0,100,100);
+        option1b.setBounds(100,100,100,100);
+        option1c.setBounds(200,200,100,100);
+        option2a.setBounds(0,0,100,100);
+        option2b.setBounds(100,100,100,100);
+        option2c.setBounds(200,200,100,100);
+        option3a.setBounds(0,0,100,100);
+        option3b.setBounds(100,100,100,100);
+        option3c.setBounds(200,200,100,100);
+        option4a.setBounds(0,0,100,100);
+        option4b.setBounds(100,100,100,100);
+        option4c.setBounds(200,200,100,100);
+        option5a.setBounds(0,0,100,100);
+        option5b.setBounds(100,100,100,100);
+        option5c.setBounds(200,200,100,100);
+        option6a.setBounds(0,0,100,100);
+        option6b.setBounds(100,100,100,100);
+        option6c.setBounds(200,200,100,100);
+
         //add components to frame
         frame1.add(nextButton);
         frame1.add(scene8button);
@@ -248,6 +352,36 @@ public class Gui extends JFrame implements ActionListener{
         frame1.add(scene42Image);
         frame1.add(scene43Image);
         frame1.add(scene44Image);
+        frame1.add(scene7a);
+        frame1.add(scene7b);
+        frame1.add(scene7c);
+        frame1.add(scene14a);
+        frame1.add(scene14b);
+        frame1.add(scene14c);
+        frame1.add(scene25a);
+        frame1.add(scene25b);
+        frame1.add(scene25c);
+        frame1.add(scene27a);
+        frame1.add(scene27b);
+        frame1.add(scene27c);
+        frame1.add(option1a);
+        frame1.add(option1b);
+        frame1.add(option1c);
+        frame1.add(option2a);
+        frame1.add(option2b);
+        frame1.add(option2c);
+        frame1.add(option3a);
+        frame1.add(option3b);
+        frame1.add(option3c);
+        frame1.add(option4a);
+        frame1.add(option4b);
+        frame1.add(option4c);
+        frame1.add(option5a);
+        frame1.add(option5b);
+        frame1.add(option5c);
+        frame1.add(option6a);
+        frame1.add(option6b);
+        frame1.add(option6c);
 
         //hide buttons
         hideButton(nextButton);
@@ -260,6 +394,36 @@ public class Gui extends JFrame implements ActionListener{
         scene24button.setVisible(false);
         hideButton(scene44button);
         scene44button.setVisible(false);
+        scene7a.setVisible(false);
+        scene7b.setVisible(false);
+        scene7c.setVisible(false);
+        scene14a.setVisible(false);
+        scene14b.setVisible(false);
+        scene14c.setVisible(false);
+        scene25a.setVisible(false);
+        scene25b.setVisible(false);
+        scene25c.setVisible(false);
+        scene27a.setVisible(false);
+        scene27b.setVisible(false);
+        scene27c.setVisible(false);
+        option1a.setVisible(false);
+        option1b.setVisible(false);
+        option1c.setVisible(false);
+        option2a.setVisible(false);
+        option2b.setVisible(false);
+        option2c.setVisible(false);
+        option3a.setVisible(false);
+        option3b.setVisible(false);
+        option3c.setVisible(false);
+        option4a.setVisible(false);
+        option4b.setVisible(false);
+        option4c.setVisible(false);
+        option5a.setVisible(false);
+        option5b.setVisible(false);
+        option5c.setVisible(false);
+        option6a.setVisible(false);
+        option6b.setVisible(false);
+        option6c.setVisible(false);
 
         //hide scenes
         scene1Image.setVisible(true);
@@ -351,6 +515,52 @@ public class Gui extends JFrame implements ActionListener{
         if(e.getSource() == scene44button){
             sceneCounter = 44;
         }
+        if(e.getSource() == scene7a){
+            counter=8;
+        }
+        if(e.getSource() == scene7b){
+            counter=9;
+            health--;
+        }
+        if(e.getSource() == scene7c){
+            counter=11;
+            health++;
+        }
+        if(e.getSource() == scene14a){
+            counter=15;
+        }
+        if(e.getSource() == scene14b){
+            counter=19;
+            health--;
+        }
+        if(e.getSource() == scene14c){
+            counter=21;
+            health++;
+        }
+        if(e.getSource() == scene25a || e.getSource() == scene25b || e.getSource() == scene25c){
+            counter++;
+            health++;
+        }
+        if(e.getSource() == scene27a || e.getSource() == scene27b || e.getSource() == scene27c){
+            counter++;
+            health--;
+        }
+        if(e.getSource() == option1a || e.getSource() == option2a || e.getSource() == option3a || e.getSource() == option4a || e.getSource() == option5a || e.getSource() == option6a){
+            counter++;
+            health--;
+        }
+        if(e.getSource() == option1b || e.getSource() == option2b || e.getSource() == option3b || e.getSource() == option4b || e.getSource() == option5b || e.getSource() == option6b){
+            counter++;
+        }
+        if(e.getSource() == option1c || e.getSource() == option2c || e.getSource() == option3c || e.getSource() == option4c || e.getSource() == option5c || e.getSource() == option6c){
+            counter++;
+            health++;
+        }
+
+        if(health==0||health==10){
+            counter=40;
+        }
+
         switch (sceneCounter) {
             case 1:
                 scene1Image.setVisible(true);
