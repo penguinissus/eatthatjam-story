@@ -334,19 +334,183 @@ public class Gui extends JFrame implements ActionListener{
     public void actionPerformed(ActionEvent e){
         if(e.getSource() == nextButton){
             sceneCounter++;
-            System.out.println(sceneCounter);
         }
         switch (sceneCounter) {
             case 1:
-                System.out.println("Case 1");
-                openingImage.setVisible(true);
-                scene2Image.setVisible(false);
+                scene1Image.setVisible(true);
                 break;
             case 2:
-                System.out.println("Case 2");
-                openingImage.setVisible(false);
+                scene1Image.setVisible(false);
                 scene2Image.setVisible(true);
                 break;
+            case 3:
+                scene2Image.setVisible(false);
+                scene3Image.setVisible(true);
+                break;
+            case 4:
+                scene3Image.setVisible(false);
+                scene4Image.setVisible(true);
+                break;
+            case 5:
+                scene4Image.setVisible(false);
+                scene5Image.setVisible(true);
+                break;
+            case 6:
+                scene5Image.setVisible(false);
+                scene6Image.setVisible(true);
+                break;
+            case 7:
+                scene6Image.setVisible(false);
+                scene7Image.setVisible(true);
+                break;
+            case 8:
+                scene7Image.setVisible(false);
+                scene8Image.setVisible(true);
+                break;
+            case 9:
+                scene8Image.setVisible(false);
+                scene9Image.setVisible(true);
+                break;
+            case 10:
+                scene9Image.setVisible(false);
+                scene10Image.setVisible(true);
+                break;
+            case 11:
+                scene10Image.setVisible(true);
+                scene11Image.setVisible(false);
+                break;
+            case 12:
+                scene11Image.setVisible(false);
+                scene12Image.setVisible(true);
+                break;
+            case 13:
+                scene12Image.setVisible(false);
+                scene13Image.setVisible(true);
+                break;
+            case 14:
+                scene13Image.setVisible(false);
+                scene14Image.setVisible(true);
+                break;
+            case 15:
+                scene14Image.setVisible(false);
+                scene15Image.setVisible(true);
+                break;
+            case 16:
+                scene15Image.setVisible(false);
+                scene16Image.setVisible(true);
+                break;
+            case 17:
+                scene16Image.setVisible(false);
+                scene17Image.setVisible(true);
+                break;
+            case 18:
+                scene17Image.setVisible(false);
+                scene18Image.setVisible(true);
+                break;
+            case 19:
+                scene18Image.setVisible(false);
+                scene19Image.setVisible(true);
+                break;
+            case 20:
+                scene19Image.setVisible(false);
+                scene20Image.setVisible(true);
+                break;
+            case 21:
+                scene20Image.setVisible(true);
+                scene21Image.setVisible(false);
+                break;
+            case 22:
+                scene21Image.setVisible(false);
+                scene22Image.setVisible(true);
+                break;
+            case 23:
+                scene22Image.setVisible(false);
+                scene23Image.setVisible(true);
+                break;
+            case 24:
+                scene23Image.setVisible(false);
+                scene24Image.setVisible(true);
+                break;
+            case 25:
+                scene24Image.setVisible(false);
+                scene25Image.setVisible(true);
+                break;
+            case 26:
+                scene25Image.setVisible(false);
+                scene26Image.setVisible(true);
+                break;
+            case 27:
+                scene26Image.setVisible(false);
+                scene27Image.setVisible(true);
+                break;
+            case 28:
+                scene27Image.setVisible(false);
+                scene28Image.setVisible(true);
+                break;
+            case 29:
+                scene28Image.setVisible(false);
+                scene29Image.setVisible(true);
+                break;
+            case 30:
+                scene29Image.setVisible(false);
+                scene30Image.setVisible(true);
+                break;
+            case 31:
+                scene30Image.setVisible(true);
+                scene31Image.setVisible(false);
+                break;
+            case 32:
+                scene31Image.setVisible(false);
+                scene32Image.setVisible(true);
+                break;
+            case 33:
+                scene32Image.setVisible(false);
+                scene33Image.setVisible(true);
+                break;
+            case 34:
+                scene33Image.setVisible(false);
+                scene34Image.setVisible(true);
+                break;
+            case 35:
+                scene34Image.setVisible(false);
+                scene35Image.setVisible(true);
+                break;
+            case 36:
+                scene35Image.setVisible(false);
+                scene36Image.setVisible(true);
+                break;
+            case 37:
+                scene36Image.setVisible(false);
+                scene37Image.setVisible(true);
+                break;
+            case 38:
+                scene37Image.setVisible(false);
+                scene38Image.setVisible(true);
+                break;
+            case 39:
+                scene38Image.setVisible(false);
+                scene39Image.setVisible(true);
+                break;
+            case 40:
+                scene39Image.setVisible(false);
+                scene40Image.setVisible(true);
+                break;
+            case 41:
+                scene40Image.setVisible(true);
+                scene41Image.setVisible(false);
+                break;
+            case 42:
+                scene41Image.setVisible(false);
+                scene42Image.setVisible(true);
+                break;
+            case 43:
+                scene42Image.setVisible(false);
+                scene43Image.setVisible(true);
+                break;
+            case 44:
+                scene43Image.setVisible(false);
+                scene44Image.setVisible(true);
+                break;    
             default:
                 break;
         }
