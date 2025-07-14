@@ -54,7 +54,7 @@ public class Gui extends JFrame implements ActionListener{
 
     public void openFrame1(){
         frame1 = new JFrame("EATTHATJAM");
-        
+
         scene1path = "C:/Users/Jocelyn/Documents/Software related/storyboard/images/scene 1.png";
         scene2path = "C:/Users/Jocelyn/Documents/Software related/storyboard/images/scene 2.png";
         scene3path = "C:/Users/Jocelyn/Documents/Software related/storyboard/images/scene 3.png";
@@ -154,7 +154,7 @@ public class Gui extends JFrame implements ActionListener{
         scene7a = new JButton();
         scene7b = new JButton();
         scene7c = new JButton();
-        scene 14a = new JButton();
+        scene14a = new JButton();
         scene14b = new JButton();
         scene14c = new JButton();
         scene25a = new JButton();
@@ -390,7 +390,7 @@ public class Gui extends JFrame implements ActionListener{
         //hide buttons
         hideButton(nextButton);
         nextButton.setVisible(true);
-        hudeButton(finalNext);
+        hideButton(finalNext);
         finalNext.setVisible(false);
         hideButton(scene8button);
         scene8button.setVisible(false);
@@ -522,61 +522,61 @@ public class Gui extends JFrame implements ActionListener{
             sceneCounter = 44;
         }
         if(e.getSource() == scene7a){
-            counter=8;
+            sceneCounter=8;
         }
         if(e.getSource() == scene7b){
-            counter=9;
+            sceneCounter=9;
             health--;
         }
         if(e.getSource() == scene7c){
-            counter=11;
+            sceneCounter=11;
             health++;
         }
         if(e.getSource() == scene14a){
-            counter=15;
+            sceneCounter=15;
         }
         if(e.getSource() == scene14b){
-            counter=19;
+            sceneCounter=19;
             health--;
         }
         if(e.getSource() == scene14c){
-            counter=21;
+            sceneCounter=21;
             health++;
         }
         if(e.getSource() == scene25a || e.getSource() == scene25b || e.getSource() == scene25c){
-            counter++;
+            sceneCounter++;
             health++;
         }
         if(e.getSource() == scene27a || e.getSource() == scene27b || e.getSource() == scene27c){
-            counter++;
+            sceneCounter++;
             health--;
         }
         if(e.getSource() == option1a || e.getSource() == option2a || e.getSource() == option3a || e.getSource() == option4a || e.getSource() == option5a || e.getSource() == option6a){
-            counter++;
+            sceneCounter++;
             health--;
         }
         if(e.getSource() == option1b || e.getSource() == option2b || e.getSource() == option3b || e.getSource() == option4b || e.getSource() == option5b || e.getSource() == option6b){
-            counter++;
+            sceneCounter++;
         }
         if(e.getSource() == option1c || e.getSource() == option2c || e.getSource() == option3c || e.getSource() == option4c || e.getSource() == option5c || e.getSource() == option6c){
-            counter++;
+            sceneCounter++;
             health++;
         }
         if(e.getSource() == finalNext){
             if(health==0){
-                counter=43;
+                sceneCounter=43;
                 health=5;
             } else if(health==10){
-                counter=41;
+                sceneCounter=41;
                 health=5;
             } else {
-                counter=42;
+                sceneCounter=42;
                 health=5;
             }
         }
 
         if(health==0||health==10){
-            counter=40;
+            sceneCounter=40;
         }
 
         switch (sceneCounter) {
@@ -871,7 +871,7 @@ public class Gui extends JFrame implements ActionListener{
             case 44:
                 scene43Image.setVisible(false);
                 scene44Image.setVisible(true);
-                break;    
+                break;
             default:
                 break;
         }
