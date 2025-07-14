@@ -33,7 +33,7 @@ public class Gui extends JFrame implements ActionListener{
         frameSizeMultiplier = 70;
         FRAME_WIDTH = 16*frameSizeMultiplier;
         FRAME_HEIGHT = 9*frameSizeMultiplier;
-        BACKGROUND_WIDTH = FRAME_WIDTH-40;
+        BACKGROUND_WIDTH = FRAME_WIDTH-20;
         BACKGROUND_HEIGHT = FRAME_HEIGHT-40;
         sceneCounter = 1;
         openFrame1();
