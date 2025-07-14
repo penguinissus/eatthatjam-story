@@ -9,7 +9,6 @@ public class Gui extends JFrame implements ActionListener{
     static JFrame frame1;
     static JButton nextButton;
     static JButton scene13button, scene8button, scene24button, scene44button;
-    //to initialize
     static JButton scene7a, scene7b, scene7c;
     static JButton scene14a, scene14b, scene14c;
     static JButton scene25a, scene25b, scene25c;
@@ -20,6 +19,7 @@ public class Gui extends JFrame implements ActionListener{
     static JButton option4a, option4b, option4c;
     static JButton option5a, option5b, option5c;
     static JButton option6a, option6b, option6c;
+    static JButton finalNext;
     static JLabel scene1Image, scene2Image, scene3Image, scene4Image, scene5Image, scene6Image, scene7Image, scene8Image, scene9Image, scene10Image;
     static JLabel scene11Image, scene12Image, scene13Image, scene14Image, scene15Image, scene16Image, scene17Image, scene18Image, scene19Image, scene20Image;
     static JLabel scene21Image, scene22Image, scene23Image, scene24Image, scene25Image, scene26Image, scene27Image, scene28Image, scene29Image, scene30Image;
@@ -146,6 +146,7 @@ public class Gui extends JFrame implements ActionListener{
         scene44Image = importImage(BACKGROUND_WIDTH, BACKGROUND_HEIGHT, scene44path);
 
         nextButton = new JButton();
+        finalNext = new JButton();
         scene8button = new JButton();
         scene13button = new JButton();
         scene24button = new JButton();
@@ -182,6 +183,7 @@ public class Gui extends JFrame implements ActionListener{
         option6c = new JButton();
 
         nextButton.addActionListener(this);
+        finalNext.addActionListener(this);
         scene8button.addActionListener(this);
         scene13button.addActionListener(this);
         scene24button.addActionListener(this);
@@ -222,6 +224,7 @@ public class Gui extends JFrame implements ActionListener{
         //set bounds for components
         //(x,y,width,height)
         nextButton.setBounds(0, 0, FRAME_WIDTH, FRAME_HEIGHT);
+        finalNext.setBounds(0, 0, FRAME_WIDTH, FRAME_HEIGHT);
         scene8button.setBounds(0, 0, FRAME_WIDTH, FRAME_HEIGHT);
         scene13button.setBounds(0, 0, FRAME_WIDTH, FRAME_HEIGHT);
         scene24button.setBounds(0, 0, FRAME_WIDTH, FRAME_HEIGHT);
@@ -304,6 +307,7 @@ public class Gui extends JFrame implements ActionListener{
 
         //add components to frame
         frame1.add(nextButton);
+        frame1.add(finalNext);
         frame1.add(scene8button);
         frame1.add(scene13button);
         frame1.add(scene24button);
@@ -386,6 +390,8 @@ public class Gui extends JFrame implements ActionListener{
         //hide buttons
         hideButton(nextButton);
         nextButton.setVisible(true);
+        hudeButton(finalNext);
+        finalNext.setVisible(false);
         hideButton(scene8button);
         scene8button.setVisible(false);
         hideButton(scene13button);
@@ -556,6 +562,18 @@ public class Gui extends JFrame implements ActionListener{
             counter++;
             health++;
         }
+        if(e.getSource() == finalNext){
+            if(health==0){
+                counter=43;
+                health=5;
+            } else if(health==10){
+                counter=41;
+                health=5;
+            } else {
+                counter=42;
+                health=5;
+            }
+        }
 
         if(health==0||health==10){
             counter=40;
@@ -586,10 +604,17 @@ public class Gui extends JFrame implements ActionListener{
                 scene6Image.setVisible(true);
                 break;
             case 7:
+                nextButton.setVisible(false);
+                scene7a.setVisible(true);
+                scene7b.setVisible(true);
+                scene7c.setVisible(true);
                 scene6Image.setVisible(false);
                 scene7Image.setVisible(true);
                 break;
             case 8:
+                scene7a.setVisible(false);
+                scene7b.setVisible(false);
+                scene7c.setVisible(false);
                 scene13button.setVisible(true);
                 nextButton.setVisible(false);
                 scene8button.setVisible(false);
@@ -597,6 +622,9 @@ public class Gui extends JFrame implements ActionListener{
                 scene8Image.setVisible(true);
                 break;
             case 9:
+                scene7a.setVisible(false);
+                scene7b.setVisible(false);
+                scene7c.setVisible(false);
                 nextButton.setVisible(true);
                 scene8Image.setVisible(false);
                 scene9Image.setVisible(true);
@@ -608,6 +636,9 @@ public class Gui extends JFrame implements ActionListener{
                 scene10Image.setVisible(true);
                 break;
             case 11:
+                scene7a.setVisible(false);
+                scene7b.setVisible(false);
+                scene7c.setVisible(false);
                 nextButton.setVisible(true);
                 scene10Image.setVisible(false);
                 scene11Image.setVisible(true);
@@ -625,10 +656,17 @@ public class Gui extends JFrame implements ActionListener{
                 scene13Image.setVisible(true);
                 break;
             case 14:
+                nextButton.setVisible(false);
+                scene14a.setVisible(true);
+                scene14b.setVisible(true);
+                scene14c.setVisible(true);
                 scene13Image.setVisible(false);
                 scene14Image.setVisible(true);
                 break;
             case 15:
+                scene14a.setVisible(false);
+                scene14b.setVisible(false);
+                scene14c.setVisible(false);
                 nextButton.setVisible(true);
                 scene14Image.setVisible(false);
                 scene15Image.setVisible(true);
@@ -648,6 +686,9 @@ public class Gui extends JFrame implements ActionListener{
                 scene18Image.setVisible(true);
                 break;
             case 19:
+                scene14a.setVisible(false);
+                scene14b.setVisible(false);
+                scene14c.setVisible(false);
                 nextButton.setVisible(true);
                 scene18Image.setVisible(false);
                 scene19Image.setVisible(true);
@@ -659,6 +700,9 @@ public class Gui extends JFrame implements ActionListener{
                 scene20Image.setVisible(true);
                 break;
             case 21:
+                scene14a.setVisible(false);
+                scene14b.setVisible(false);
+                scene14c.setVisible(false);
                 nextButton.setVisible(true);
                 scene20Image.setVisible(false);
                 scene21Image.setVisible(true);
@@ -678,91 +722,148 @@ public class Gui extends JFrame implements ActionListener{
                 scene24Image.setVisible(true);
                 break;
             case 25:
+                nextButton.setVisible(false);
+                scene25a.setVisible(true);
+                scene25b.setVisible(true);
+                scene25c.setVisible(true);
                 scene24Image.setVisible(false);
                 scene25Image.setVisible(true);
                 break;
             case 26:
+                scene25a.setVisible(false);
+                scene25b.setVisible(false);
+                scene25c.setVisible(false);
                 nextButton.setVisible(true);
                 scene25Image.setVisible(false);
                 scene26Image.setVisible(true);
                 break;
             case 27:
+                nextButton.setVisible(false);
+                scene27a.setVisible(true);
+                scene27b.setVisible(true);
+                scene27c.setVisible(true);
                 scene26Image.setVisible(false);
                 scene27Image.setVisible(true);
                 break;
             case 28:
+                scene27a.setVisible(false);
+                scene27b.setVisible(false);
+                scene27c.setVisible(false);
                 nextButton.setVisible(true);
                 scene27Image.setVisible(false);
                 scene28Image.setVisible(true);
                 break;
             case 29:
+                nextButton.setVisible(false);
+                option1a.setVisible(true);
+                option1b.setVisible(true);
+                option1c.setVisible(true);
                 scene28Image.setVisible(false);
                 scene29Image.setVisible(true);
                 break;
             case 30:
+                option1a.setVisible(false);
+                option1b.setVisible(false);
+                option1c.setVisible(false);
                 nextButton.setVisible(true);
                 scene29Image.setVisible(false);
                 scene30Image.setVisible(true);
                 break;
             case 31:
+                nextButton.setVisible(false);
+                option2a.setVisible(true);
+                option2b.setVisible(true);
+                option2c.setVisible(true);
                 scene30Image.setVisible(false);
                 scene31Image.setVisible(true);
                 break;
             case 32:
+                option2a.setVisible(false);
+                option2b.setVisible(false);
+                option2c.setVisible(false);
                 nextButton.setVisible(true);
                 scene31Image.setVisible(false);
                 scene32Image.setVisible(true);
                 break;
             case 33:
+                nextButton.setVisible(false);
+                option3a.setVisible(true);
+                option3b.setVisible(true);
+                option3c.setVisible(true);
                 scene32Image.setVisible(false);
                 scene33Image.setVisible(true);
                 break;
             case 34:
+                option3a.setVisible(false);
+                option3b.setVisible(false);
+                option3c.setVisible(false);
                 nextButton.setVisible(true);
                 scene33Image.setVisible(false);
                 scene34Image.setVisible(true);
                 break;
             case 35:
+                nextButton.setVisible(false);
+                option4a.setVisible(true);
+                option4b.setVisible(true);
+                option4c.setVisible(true);
                 scene34Image.setVisible(false);
                 scene35Image.setVisible(true);
                 break;
             case 36:
+                option4a.setVisible(false);
+                option4b.setVisible(false);
+                option4c.setVisible(false);
                 nextButton.setVisible(true);
                 scene35Image.setVisible(false);
                 scene36Image.setVisible(true);
                 break;
             case 37:
+                nextButton.setVisible(false);
+                option5a.setVisible(true);
+                option5b.setVisible(true);
+                option5c.setVisible(true);
                 scene36Image.setVisible(false);
                 scene37Image.setVisible(true);
                 break;
             case 38:
+                option5a.setVisible(false);
+                option5b.setVisible(false);
+                option5c.setVisible(false);
                 nextButton.setVisible(true);
                 scene37Image.setVisible(false);
                 scene38Image.setVisible(true);
                 break;
             case 39:
+                nextButton.setVisible(false);
+                option6a.setVisible(true);
+                option6b.setVisible(true);
+                option6c.setVisible(true);
                 scene38Image.setVisible(false);
                 scene39Image.setVisible(true);
                 break;
             case 40:
-                nextButton.setVisible(true);
+                option6a.setVisible(false);
+                option6b.setVisible(false);
+                option6c.setVisible(false);
+                nextButton.setVisible(false);
+                finalNext.setVisible(true);
                 scene39Image.setVisible(false);
                 scene40Image.setVisible(true);
                 break;
             case 41:
-                nextButton.setVisible(false);
+                finalNext.setVisible(false);
                 scene44button.setVisible(true);
                 scene40Image.setVisible(false);
                 scene41Image.setVisible(true);
                 break;
             case 42:
-                nextButton.setVisible(false);
+                finalNext.setVisible(false);
                 scene44button.setVisible(true);
                 scene41Image.setVisible(false);
                 scene42Image.setVisible(true);
                 break;
             case 43:
-                nextButton.setVisible(false);
+                finalNext.setVisible(false);
                 scene44button.setVisible(true);
                 scene42Image.setVisible(false);
                 scene43Image.setVisible(true);
