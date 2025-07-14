@@ -25,17 +25,22 @@ public class Gui extends JFrame implements ActionListener{
     static JLabel scene21Image, scene22Image, scene23Image, scene24Image, scene25Image, scene26Image, scene27Image, scene28Image, scene29Image, scene30Image;
     static JLabel scene31Image, scene32Image, scene33Image, scene34Image, scene35Image, scene36Image, scene37Image, scene38Image, scene39Image, scene40Image;
     static JLabel scene41Image, scene42Image, scene43Image, scene44Image;
+    static JLabel health1, health2, health3, health4, health5, health6, health7, health8, health9;
     static String scene1path, scene2path, scene3path, scene4path, scene5path, scene6path, scene7path, scene8path, scene9path, scene10path;
     static String scene11path, scene12path, scene13path, scene14path, scene15path, scene16path, scene17path, scene18path, scene19path, scene20path;
     static String scene21path, scene22path, scene23path, scene24path, scene25path, scene26path, scene27path, scene28path, scene29path, scene30path;
     static String scene31path, scene32path, scene33path, scene34path, scene35path, scene36path, scene37path, scene38path, scene39path, scene40path;
     static String scene41path, scene42path, scene43path, scene44path;
+    static String health1path, health2path, health3path, health4path, health5path, health6path, health7path, health8path, health9path;
 
     int frameSizeMultiplier = 70;
     int FRAME_WIDTH;
     int FRAME_HEIGHT;
     int BACKGROUND_WIDTH;
     int BACKGROUND_HEIGHT;
+    int health_width;
+    int health_height;
+    boolean showHealth;
 
     int sceneCounter;
     int health;
@@ -47,8 +52,11 @@ public class Gui extends JFrame implements ActionListener{
         FRAME_HEIGHT = 9*frameSizeMultiplier;
         BACKGROUND_WIDTH = FRAME_WIDTH-20;
         BACKGROUND_HEIGHT = FRAME_HEIGHT-40;
+        health_width = 16*10;
+        health_height = 9*10;
         sceneCounter = 1;
         health = 5;
+        showHealth = false;
         openFrame1();
     }
 
@@ -99,6 +107,15 @@ public class Gui extends JFrame implements ActionListener{
         scene42path = "C:/Users/Jocelyn/Documents/Software related/storyboard/images/scene 42.png";
         scene43path = "C:/Users/Jocelyn/Documents/Software related/storyboard/images/scene 43.png";
         scene44path = "C:/Users/Jocelyn/Documents/Software related/storyboard/images/scene 44.png";
+        health1path = "C:/Users/Jocelyn/Documents/Software related/storyboard/images/health1.png";
+        health2path = "C:/Users/Jocelyn/Documents/Software related/storyboard/images/health2.png";
+        health3path = "C:/Users/Jocelyn/Documents/Software related/storyboard/images/health3.png";
+        health4path = "C:/Users/Jocelyn/Documents/Software related/storyboard/images/health4.png";
+        health5path = "C:/Users/Jocelyn/Documents/Software related/storyboard/images/health5.png";
+        health6path = "C:/Users/Jocelyn/Documents/Software related/storyboard/images/health6.png";
+        health7path = "C:/Users/Jocelyn/Documents/Software related/storyboard/images/health7.png";
+        health8path = "C:/Users/Jocelyn/Documents/Software related/storyboard/images/health8.png";
+        health9path = "C:/Users/Jocelyn/Documents/Software related/storyboard/images/health9.png";
 
         scene1Image = importImage(BACKGROUND_WIDTH, BACKGROUND_HEIGHT, scene1path);
         scene2Image = importImage(BACKGROUND_WIDTH, BACKGROUND_HEIGHT, scene2path);
@@ -144,6 +161,15 @@ public class Gui extends JFrame implements ActionListener{
         scene42Image = importImage(BACKGROUND_WIDTH, BACKGROUND_HEIGHT, scene42path);
         scene43Image = importImage(BACKGROUND_WIDTH, BACKGROUND_HEIGHT, scene43path);
         scene44Image = importImage(BACKGROUND_WIDTH, BACKGROUND_HEIGHT, scene44path);
+        health1 = importImage(health_width, health_height, health1path);
+        health2 = importImage(health_width, health_height, health2path);
+        health3 = importImage(health_width, health_height, health3path);
+        health4 = importImage(health_width, health_height, health4path);
+        health5 = importImage(health_width, health_height, health5path);
+        health6 = importImage(health_width, health_height, health6path);
+        health7 = importImage(health_width, health_height, health7path);
+        health8 = importImage(health_width, health_height, health8path);
+        health9 = importImage(health_width, health_height, health9path);
 
         nextButton = new JButton();
         finalNext = new JButton();
@@ -305,6 +331,16 @@ public class Gui extends JFrame implements ActionListener{
         option6b.setBounds(100,100,100,100);
         option6c.setBounds(200,200,100,100);
 
+        health1.setBounds(0,0,health_width, health_height);
+        health2.setBounds(0,0,health_width, health_height);
+        health3.setBounds(0,0,health_width, health_height);
+        health4.setBounds(0,0,health_width, health_height);
+        health5.setBounds(0,0,health_width, health_height);
+        health6.setBounds(0,0,health_width, health_height);
+        health7.setBounds(0,0,health_width, health_height);
+        health8.setBounds(0,0,health_width, health_height);
+        health9.setBounds(0,0,health_width, health_height);
+
         //add components to frame
         frame1.add(nextButton);
         frame1.add(finalNext);
@@ -386,6 +422,15 @@ public class Gui extends JFrame implements ActionListener{
         frame1.add(option6a);
         frame1.add(option6b);
         frame1.add(option6c);
+        frame1.add(health1);
+        frame1.add(health2);
+        frame1.add(health3);
+        frame1.add(health4);
+        frame1.add(health5);
+        frame1.add(health6);
+        frame1.add(health7);
+        frame1.add(health8);
+        frame1.add(health9);
 
         //hide buttons
         hideButton(nextButton);
@@ -476,6 +521,16 @@ public class Gui extends JFrame implements ActionListener{
         scene42Image.setVisible(false);
         scene43Image.setVisible(false);
         scene44Image.setVisible(false);
+        health1.setVisible(false);
+        health2.setVisible(false);
+        health3.setVisible(false);
+        health4.setVisible(false);
+        health5.setVisible(false);
+        health6.setVisible(false);
+        health7.setVisible(false);
+        health8.setVisible(false);
+        health9.setVisible(false);
+        
 
         //frame settings
         frame1.setSize(FRAME_WIDTH, FRAME_HEIGHT);
@@ -604,6 +659,7 @@ public class Gui extends JFrame implements ActionListener{
                 scene6Image.setVisible(true);
                 break;
             case 7:
+                showHealth = true;
                 nextButton.setVisible(false);
                 scene7a.setVisible(true);
                 scene7b.setVisible(true);
@@ -842,6 +898,7 @@ public class Gui extends JFrame implements ActionListener{
                 scene39Image.setVisible(true);
                 break;
             case 40:
+                showHealth = false;
                 option6a.setVisible(false);
                 option6b.setVisible(false);
                 option6c.setVisible(false);
@@ -874,6 +931,48 @@ public class Gui extends JFrame implements ActionListener{
                 break;
             default:
                 break;
+        }
+
+        if(!showHealth){
+            health1.setVisible(false);
+            health2.setVisible(false);
+            health3.setVisible(false);
+            health4.setVisible(false);
+            health5.setVisible(false);
+            health6.setVisible(false);
+            health7.setVisible(false);
+            health8.setVisible(false);
+            health9.setVisible(false);
+        } else {
+            switch (health) {
+                case 1:
+                    health1.setVisible(true);
+                    break;
+                case 2:
+                    health2.setVisible(true);
+                    break;   
+                case 3:
+                    health3.setVisible(true);
+                    break; 
+                case 4:
+                    health4.setVisible(true);
+                    break; 
+                case 5:
+                    health5.setVisible(true);
+                    break; 
+                case 6:
+                    health6.setVisible(true);
+                    break; 
+                case 7:
+                    health7.setVisible(true);
+                    break; 
+                case 8:
+                    health8.setVisible(true);
+                    break; 
+                case 9:
+                    health9.setVisible(true);
+                    break;                       
+            }
         }
     }
 
