@@ -87,6 +87,7 @@ a -1 choice: ha it was all a lie
 a -1 choice: the weather is quite nice today
 a -1 choice: why are you alone? is it because your parents don't love you?
 
+
 Part 7: 
 you think: uh oh the cracks are showing
 cycle between the following options randomly until we run out or reach 10 or 0 points
