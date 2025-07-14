@@ -75,25 +75,45 @@ Part 5:
 you think: but how? i need the raccoon to trust that I'm not hungry for jam
 you think: i need to convince raccoon that we're friends
 choices
-a +1 choice
-a 0 choice
-another +1 choice
+a +1 choice: do you want some jam? I'm willing to share
+a +1 choice: yo you look hot
+another +1 choice: hey man I just want to be friends
+scene 24: I need to convince the raccoon that we're friends
+scene 25: show options
 
 Part 6:
 you think: hey raccoon is falling for it
-a -1 choice
-a 0 choice
-a -1 choice
+a -1 choice: ha it was all a lie
+a -1 choice: the weather is quite nice today
+a -1 choice: why are you alone? is it because your parents don't love you?
 
 Part 7: 
-you think: the cracks are showing
+you think: uh oh the cracks are showing
 cycle between the following options randomly until we run out or reach 10 or 0 points
 Option 1:
+    choice 1: you suck
+    choice 2: I have perfect pitch
+    choice 3: You're kinda cool
 Option 2:
+    choice 1: you smell
+    choice 2: I'm gonna lick your couch
+    choice 3: share some trash pls
 Option 3:
+    choice 1: your dad didn't go out to buy milk
+    choice 2: you're so freaky
+    choice 3: thats one funky trash can
 Option 4:
+    choice 1: theres echo in your skull
+    choice 2: oh em gee you're a furry!?!? :333
+    choice 3: nice trash you got there, where did you buy it?
 Option 5:
+    choice 1: I hate you
+    choice 2: spare me some teeth
+    choice 3: I just genuinely want to be friends
 Option 6:
+    choice 1: I'm hoarding all the jam for myself
+    choice 2: I just want a teeny bit of jam
+    choice 3: All the jam is yours
 
 Part 8:
 Ending 1: you reached 10 points
