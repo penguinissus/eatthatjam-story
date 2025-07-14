@@ -117,6 +117,18 @@ Option 6:
     choice 1: I'm hoarding all the jam for myself
     choice 2: I just want a teeny bit of jam
     choice 3: All the jam is yours
+scene 29: options 1
+scene 30: passing scene
+scene 31: options 2
+scene 32: passing scene
+scene 33: options 3
+scene 34: passing scene
+scene 35: options 4
+scene 36: passing scene
+scene 37: options 5
+scene 38: passing scene
+scene 39: options 6
+scene 39: passing scene
 
 Part 8:
 Ending 1: you reached 10 points
