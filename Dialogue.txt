@@ -86,7 +86,8 @@ you think: hey raccoon is falling for it
 a -1 choice: ha it was all a lie
 a -1 choice: the weather is quite nice today
 a -1 choice: why are you alone? is it because your parents don't love you?
-
+scene 26: I think the raccoon is falling for it
+scene 27: show options
 
 Part 7: 
 you think: uh oh the cracks are showing
