@@ -530,7 +530,7 @@ public class Gui extends JFrame implements ActionListener{
         health7.setVisible(false);
         health8.setVisible(false);
         health9.setVisible(false);
-        
+
 
         //frame settings
         frame1.setSize(FRAME_WIDTH, FRAME_HEIGHT);
@@ -671,6 +671,7 @@ public class Gui extends JFrame implements ActionListener{
                 scene7a.setVisible(false);
                 scene7b.setVisible(false);
                 scene7c.setVisible(false);
+                System.out.println("set visible to false");
                 scene13button.setVisible(true);
                 nextButton.setVisible(false);
                 scene8button.setVisible(false);
@@ -950,30 +951,32 @@ public class Gui extends JFrame implements ActionListener{
                     break;
                 case 2:
                     health2.setVisible(true);
-                    break;   
+                    break;
                 case 3:
                     health3.setVisible(true);
-                    break; 
+                    break;
                 case 4:
                     health4.setVisible(true);
-                    break; 
+                    break;
                 case 5:
                     health5.setVisible(true);
-                    break; 
+                    break;
                 case 6:
                     health6.setVisible(true);
-                    break; 
+                    break;
                 case 7:
                     health7.setVisible(true);
-                    break; 
+                    break;
                 case 8:
                     health8.setVisible(true);
-                    break; 
+                    break;
                 case 9:
                     health9.setVisible(true);
-                    break;                       
+                    break;
             }
         }
+        frame1.revalidate();
+        frame1.repaint();
     }
 
     public static void main(String[] args){
