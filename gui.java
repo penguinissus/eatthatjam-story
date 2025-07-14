@@ -8,7 +8,7 @@ import javax.imageio.ImageIO; //jswing image stuff
 public class Gui extends JFrame implements ActionListener{
     static JFrame frame1;
     static JButton nextButton;
-    static JButton scene13button, scene8button, scene24button, scene44button; //tbd
+    static JButton scene13button, scene8button, scene24button, scene44button;
     static JLabel scene1Image, scene2Image, scene3Image, scene4Image, scene5Image, scene6Image, scene7Image, scene8Image, scene9Image, scene10Image;
     static JLabel scene11Image, scene12Image, scene13Image, scene14Image, scene15Image, scene16Image, scene17Image, scene18Image, scene19Image, scene20Image;
     static JLabel scene21Image, scene22Image, scene23Image, scene24Image, scene25Image, scene26Image, scene27Image, scene28Image, scene29Image, scene30Image;
@@ -339,6 +339,18 @@ public class Gui extends JFrame implements ActionListener{
         if(e.getSource() == nextButton){
             sceneCounter++;
         }
+        if(e.getSource() == scene8button){
+            sceneCounter = 8;
+        }
+        if(e.getSource() == scene13button){
+            sceneCounter = 13;
+        }
+        if(e.getSource() == scene24button){
+            sceneCounter = 24;
+        }
+        if(e.getSource() == scene44button){
+            sceneCounter = 44;
+        }
         switch (sceneCounter) {
             case 1:
                 scene1Image.setVisible(true);
@@ -368,26 +380,37 @@ public class Gui extends JFrame implements ActionListener{
                 scene7Image.setVisible(true);
                 break;
             case 8:
+                scene13button.setVisible(true);
+                nextButton.setVisible(false);
+                scene8button.setVisible(false);
                 scene7Image.setVisible(false);
                 scene8Image.setVisible(true);
                 break;
             case 9:
+                nextButton.setVisible(true);
                 scene8Image.setVisible(false);
                 scene9Image.setVisible(true);
                 break;
             case 10:
+                nextButton.setVisible(false);
+                scene13button.setVisible(true);
                 scene9Image.setVisible(false);
                 scene10Image.setVisible(true);
                 break;
             case 11:
+                nextButton.setVisible(true);
                 scene10Image.setVisible(false);
                 scene11Image.setVisible(true);
                 break;
             case 12:
+                nextButton.setVisible(false);
+                scene8button.setVisible(true);
                 scene11Image.setVisible(false);
                 scene12Image.setVisible(true);
                 break;
             case 13:
+                scene13button.setVisible(false);
+                nextButton.setVisible(true);
                 scene12Image.setVisible(false);
                 scene13Image.setVisible(true);
                 break;
@@ -396,6 +419,7 @@ public class Gui extends JFrame implements ActionListener{
                 scene14Image.setVisible(true);
                 break;
             case 15:
+                nextButton.setVisible(true);
                 scene14Image.setVisible(false);
                 scene15Image.setVisible(true);
                 break;
@@ -408,18 +432,24 @@ public class Gui extends JFrame implements ActionListener{
                 scene17Image.setVisible(true);
                 break;
             case 18:
+                nextButton.setVisible(false);
+                scene24button.setVisible(true);
                 scene17Image.setVisible(false);
                 scene18Image.setVisible(true);
                 break;
             case 19:
+                nextButton.setVisible(true);
                 scene18Image.setVisible(false);
                 scene19Image.setVisible(true);
                 break;
             case 20:
+                nextButton.setVisible(false);
+                scene24button.setVisible(true);
                 scene19Image.setVisible(false);
                 scene20Image.setVisible(true);
                 break;
             case 21:
+                nextButton.setVisible(true);
                 scene20Image.setVisible(false);
                 scene21Image.setVisible(true);
                 break;
@@ -432,6 +462,8 @@ public class Gui extends JFrame implements ActionListener{
                 scene23Image.setVisible(true);
                 break;
             case 24:
+                scene24button.setVisible(false);
+                nextButton.setVisible(true);
                 scene23Image.setVisible(false);
                 scene24Image.setVisible(true);
                 break;
@@ -440,6 +472,7 @@ public class Gui extends JFrame implements ActionListener{
                 scene25Image.setVisible(true);
                 break;
             case 26:
+                nextButton.setVisible(true);
                 scene25Image.setVisible(false);
                 scene26Image.setVisible(true);
                 break;
@@ -448,6 +481,7 @@ public class Gui extends JFrame implements ActionListener{
                 scene27Image.setVisible(true);
                 break;
             case 28:
+                nextButton.setVisible(true);
                 scene27Image.setVisible(false);
                 scene28Image.setVisible(true);
                 break;
@@ -456,6 +490,7 @@ public class Gui extends JFrame implements ActionListener{
                 scene29Image.setVisible(true);
                 break;
             case 30:
+                nextButton.setVisible(true);
                 scene29Image.setVisible(false);
                 scene30Image.setVisible(true);
                 break;
@@ -464,6 +499,7 @@ public class Gui extends JFrame implements ActionListener{
                 scene31Image.setVisible(true);
                 break;
             case 32:
+                nextButton.setVisible(true);
                 scene31Image.setVisible(false);
                 scene32Image.setVisible(true);
                 break;
@@ -472,6 +508,7 @@ public class Gui extends JFrame implements ActionListener{
                 scene33Image.setVisible(true);
                 break;
             case 34:
+                nextButton.setVisible(true);
                 scene33Image.setVisible(false);
                 scene34Image.setVisible(true);
                 break;
@@ -480,6 +517,7 @@ public class Gui extends JFrame implements ActionListener{
                 scene35Image.setVisible(true);
                 break;
             case 36:
+                nextButton.setVisible(true);
                 scene35Image.setVisible(false);
                 scene36Image.setVisible(true);
                 break;
@@ -488,6 +526,7 @@ public class Gui extends JFrame implements ActionListener{
                 scene37Image.setVisible(true);
                 break;
             case 38:
+                nextButton.setVisible(true);
                 scene37Image.setVisible(false);
                 scene38Image.setVisible(true);
                 break;
@@ -496,18 +535,25 @@ public class Gui extends JFrame implements ActionListener{
                 scene39Image.setVisible(true);
                 break;
             case 40:
+                nextButton.setVisible(true);
                 scene39Image.setVisible(false);
                 scene40Image.setVisible(true);
                 break;
             case 41:
+                nextButton.setVisible(false);
+                scene44button.setVisible(true);
                 scene40Image.setVisible(false);
                 scene41Image.setVisible(true);
                 break;
             case 42:
+                nextButton.setVisible(false);
+                scene44button.setVisible(true);
                 scene41Image.setVisible(false);
                 scene42Image.setVisible(true);
                 break;
             case 43:
+                nextButton.setVisible(false);
+                scene44button.setVisible(true);
                 scene42Image.setVisible(false);
                 scene43Image.setVisible(true);
                 break;

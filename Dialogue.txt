@@ -32,9 +32,9 @@ say: I'm just hungry +1
     you turn to leave
     but you notice raccoon eyeing the jar of jam
 scene 7: show the choices
-    choice 1: counter++
-    choice 2: counter+=2
-    choice 3: counter+=4
+    choice 1: counter++ (to scene 8)
+    choice 2: counter+=2 (to scene 9)
+    choice 3: counter+=4 (to scene 11)
 scene 8: say nothing and walk away, show the to scene13button
 scene 9: say how are you doing, show nextButton
 scene 10: raccon says pervert, show the to scene13button
@@ -58,9 +58,9 @@ say: oh look a jar of jam! +1
     saliva start spilling from the raccoon's mouth, evidently hungry
     you think: oh no the raccoon also wants the jam, i must distract it
 scene 14: show choices
-    choice 1: counter++;
-    choice 2: counter+=4;
-    choice 3: counter+=5;
+    choice 1: counter++; (to 15)
+    choice 2: counter+=5; (to 19)
+    choice 3: counter+=7; (to 21)
 scene 15: both
 scene 16: slowly
 scene 17: moving
