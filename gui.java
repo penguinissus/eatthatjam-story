@@ -42,7 +42,7 @@ public class Gui extends JFrame implements ActionListener{
 
         //set bounds for components
         //(x,y,width,height)
-        nextButton.setBounds(100, 100, 100, 100);
+        nextButton.setBounds(0, 0, FRAME_WIDTH, FRAME_HEIGHT);
         openingImage.setBounds(0, 0, FRAME_WIDTH, FRAME_HEIGHT);
         scene2Image.setBounds(0, 0, FRAME_WIDTH, FRAME_HEIGHT);
 

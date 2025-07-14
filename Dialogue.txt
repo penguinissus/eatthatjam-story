@@ -128,7 +128,7 @@ scene 36: passing scene
 scene 37: options 5
 scene 38: passing scene
 scene 39: options 6
-scene 39: passing scene
+scene 40: passing scene
 
 Part 8:
 Ending 1: you reached 10 points
