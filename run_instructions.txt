@@ -1,0 +1,11 @@
+EATTHATJAM run instructions
+recommended method to open jar files (you can use your own methods if you want):
+
+Step 1:
+Download JDK (java development kit)
+https://www.oracle.com/ca-fr/java/technologies/downloads/
+further instructions on how to download jdk:
+https://docs.oracle.com/en/java/javase/15/install/overview-jdk-installation.html#GUID-A7E27B90-A28D-4237-9383-A58B416071CA
+
+Step 2:
+Simply click on the jar file and it should be able to run itself without any further assets
