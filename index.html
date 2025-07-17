@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>CheerpJ Demo</title>
+    <!-- Load CheerpJ runtime -->
+    <script src="https://cjrtnc.leaningtech.com/4.2/loader.js"></script>
+  </head>
+  <body>
+    <script>
+      (async function() {
+        await cheerpjInit(); // Initializes CheerpJ
+        cheerpjCreateDisplay(800, 600); // Sets up GUI container
+        await cheerpjRunJar("/app/myapp.jar"); // Starts the JAR
+      })();
+    </script>
+  </body>
+</html>
